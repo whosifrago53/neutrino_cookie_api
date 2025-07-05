@@ -32,6 +32,6 @@ jobs:
             fi
             
             # Restart PM2 app
-            pm2 restart cookie_api || pm2 start ecosystem.config.js --only cookie_api
+            pm2 restart neutrino_cookie_api || pm2 start ecosystem.config.js --only neutrino_cookie_api
             pm2 save
           EOF
